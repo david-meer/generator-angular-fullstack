@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module '<%= scriptAppName %>'
-.controller 'SignupCtrl', ($scope, Auth, $location<% if(filters.oauth) {%>, $window<% } %>) ->
+.controller 'SignupController', ($scope, Auth, $location<% if(filters.oauth) {%>, $window<% } %>) ->
   $scope.user = {}
   $scope.errors = {}
   $scope.register = (form) ->

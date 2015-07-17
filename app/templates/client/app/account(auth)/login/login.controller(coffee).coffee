@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module '<%= scriptAppName %>'
-.controller 'LoginCtrl', ($scope, Auth, $location<% if(filters.oauth) {%>, $window<% } %>) ->
+.controller 'LoginController', ($scope, Auth, $location<% if(filters.oauth) {%>, $window<% } %>) ->
   $scope.user = {}
   $scope.errors = {}
   $scope.login = (form) ->

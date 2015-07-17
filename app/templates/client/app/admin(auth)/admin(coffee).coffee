@@ -5,11 +5,11 @@ angular.module '<%= scriptAppName %>'
   $routeProvider
   .when '/admin',
     templateUrl: 'app/admin/admin.html'
-    controller: 'AdminCtrl'
+    controller: 'AdminController'
 <% } %><% if(filters.uirouter) { %>.config ($stateProvider) ->
   $stateProvider
   .state 'admin',
     url: '/admin'
     templateUrl: 'app/admin/admin.html'
-    controller: 'AdminCtrl'
+    controller: 'AdminController'
 <% } %>
